@@ -1,0 +1,516 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9F0E4025250965F300C32AD8 /* CriticalThink.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 9F0E4024250965F300C32AD8 /* CriticalThink.entitlements */; };
+		9F0E4027250965F300C32AD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0E4026250965F300C32AD8 /* AppDelegate.swift */; };
+		9F0E402A250965F300C32AD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F0E4028250965F300C32AD8 /* Main.storyboard */; };
+		9F0E402C250965F300C32AD8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0E402B250965F300C32AD8 /* ViewController.swift */; };
+		9F0E402E250965F400C32AD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F0E402D250965F400C32AD8 /* Assets.xcassets */; };
+		9F0E4035250965F400C32AD8 /* CriticalThink Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9F0E4034250965F400C32AD8 /* CriticalThink Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9F0E403A250965F400C32AD8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F0E4039250965F400C32AD8 /* Cocoa.framework */; };
+		9F0E403D250965F400C32AD8 /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0E403C250965F400C32AD8 /* SafariExtensionHandler.swift */; };
+		9F0E403F250965F400C32AD8 /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0E403E250965F400C32AD8 /* SafariExtensionViewController.swift */; };
+		9F0E4042250965F400C32AD8 /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F0E4040250965F400C32AD8 /* SafariExtensionViewController.xib */; };
+		9F0E4045250965F400C32AD8 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 9F0E4044250965F400C32AD8 /* script.js */; };
+		9F0E4047250965F400C32AD8 /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9F0E4046250965F400C32AD8 /* ToolbarItemIcon.pdf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9F0E4036250965F400C32AD8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F0E4019250965F300C32AD8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F0E4033250965F400C32AD8;
+			remoteInfo = "CriticalThink Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9F0E404E250965F400C32AD8 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9F0E4035250965F400C32AD8 /* CriticalThink Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9F0E4021250965F300C32AD8 /* CriticalThink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CriticalThink.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F0E4024250965F300C32AD8 /* CriticalThink.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CriticalThink.entitlements; sourceTree = "<group>"; };
+		9F0E4026250965F300C32AD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9F0E4029250965F300C32AD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9F0E402B250965F300C32AD8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9F0E402D250965F400C32AD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9F0E402F250965F400C32AD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F0E4034250965F400C32AD8 /* CriticalThink Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "CriticalThink Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F0E4039250965F400C32AD8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		9F0E403C250965F400C32AD8 /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
+		9F0E403E250965F400C32AD8 /* SafariExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionViewController.swift; sourceTree = "<group>"; };
+		9F0E4041250965F400C32AD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
+		9F0E4043250965F400C32AD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F0E4044250965F400C32AD8 /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
+		9F0E4046250965F400C32AD8 /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
+		9F0E4048250965F400C32AD8 /* CriticalThink_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CriticalThink_Extension.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9F0E401E250965F300C32AD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F0E4031250965F400C32AD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F0E403A250965F400C32AD8 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9F0E4018250965F300C32AD8 = {
+			isa = PBXGroup;
+			children = (
+				9F0E4023250965F300C32AD8 /* CriticalThink */,
+				9F0E403B250965F400C32AD8 /* CriticalThink Extension */,
+				9F0E4038250965F400C32AD8 /* Frameworks */,
+				9F0E4022250965F300C32AD8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9F0E4022250965F300C32AD8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F0E4021250965F300C32AD8 /* CriticalThink.app */,
+				9F0E4034250965F400C32AD8 /* CriticalThink Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9F0E4023250965F300C32AD8 /* CriticalThink */ = {
+			isa = PBXGroup;
+			children = (
+				9F0E4024250965F300C32AD8 /* CriticalThink.entitlements */,
+				9F0E4026250965F300C32AD8 /* AppDelegate.swift */,
+				9F0E4028250965F300C32AD8 /* Main.storyboard */,
+				9F0E402B250965F300C32AD8 /* ViewController.swift */,
+				9F0E402D250965F400C32AD8 /* Assets.xcassets */,
+				9F0E402F250965F400C32AD8 /* Info.plist */,
+			);
+			path = CriticalThink;
+			sourceTree = "<group>";
+		};
+		9F0E4038250965F400C32AD8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F0E4039250965F400C32AD8 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9F0E403B250965F400C32AD8 /* CriticalThink Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9F0E403C250965F400C32AD8 /* SafariExtensionHandler.swift */,
+				9F0E403E250965F400C32AD8 /* SafariExtensionViewController.swift */,
+				9F0E4040250965F400C32AD8 /* SafariExtensionViewController.xib */,
+				9F0E4043250965F400C32AD8 /* Info.plist */,
+				9F0E4044250965F400C32AD8 /* script.js */,
+				9F0E4046250965F400C32AD8 /* ToolbarItemIcon.pdf */,
+				9F0E4048250965F400C32AD8 /* CriticalThink_Extension.entitlements */,
+			);
+			path = "CriticalThink Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9F0E4020250965F300C32AD8 /* CriticalThink */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F0E404F250965F400C32AD8 /* Build configuration list for PBXNativeTarget "CriticalThink" */;
+			buildPhases = (
+				9F0E401D250965F300C32AD8 /* Sources */,
+				9F0E401E250965F300C32AD8 /* Frameworks */,
+				9F0E401F250965F300C32AD8 /* Resources */,
+				9F0E404E250965F400C32AD8 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F0E4037250965F400C32AD8 /* PBXTargetDependency */,
+			);
+			name = CriticalThink;
+			productName = CriticalThink;
+			productReference = 9F0E4021250965F300C32AD8 /* CriticalThink.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9F0E4033250965F400C32AD8 /* CriticalThink Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F0E404B250965F400C32AD8 /* Build configuration list for PBXNativeTarget "CriticalThink Extension" */;
+			buildPhases = (
+				9F0E4030250965F400C32AD8 /* Sources */,
+				9F0E4031250965F400C32AD8 /* Frameworks */,
+				9F0E4032250965F400C32AD8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CriticalThink Extension";
+			productName = "CriticalThink Extension";
+			productReference = 9F0E4034250965F400C32AD8 /* CriticalThink Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9F0E4019250965F300C32AD8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1170;
+				LastUpgradeCheck = 1170;
+				ORGANIZATIONNAME = "Brandon Main";
+				TargetAttributes = {
+					9F0E4020250965F300C32AD8 = {
+						CreatedOnToolsVersion = 11.7;
+					};
+					9F0E4033250965F400C32AD8 = {
+						CreatedOnToolsVersion = 11.7;
+					};
+				};
+			};
+			buildConfigurationList = 9F0E401C250965F300C32AD8 /* Build configuration list for PBXProject "CriticalThink" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9F0E4018250965F300C32AD8;
+			productRefGroup = 9F0E4022250965F300C32AD8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9F0E4020250965F300C32AD8 /* CriticalThink */,
+				9F0E4033250965F400C32AD8 /* CriticalThink Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9F0E401F250965F300C32AD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F0E4025250965F300C32AD8 /* CriticalThink.entitlements in Resources */,
+				9F0E402E250965F400C32AD8 /* Assets.xcassets in Resources */,
+				9F0E402A250965F300C32AD8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F0E4032250965F400C32AD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F0E4047250965F400C32AD8 /* ToolbarItemIcon.pdf in Resources */,
+				9F0E4042250965F400C32AD8 /* SafariExtensionViewController.xib in Resources */,
+				9F0E4045250965F400C32AD8 /* script.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9F0E401D250965F300C32AD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F0E402C250965F300C32AD8 /* ViewController.swift in Sources */,
+				9F0E4027250965F300C32AD8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F0E4030250965F400C32AD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F0E403F250965F400C32AD8 /* SafariExtensionViewController.swift in Sources */,
+				9F0E403D250965F400C32AD8 /* SafariExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9F0E4037250965F400C32AD8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F0E4033250965F400C32AD8 /* CriticalThink Extension */;
+			targetProxy = 9F0E4036250965F400C32AD8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9F0E4028250965F300C32AD8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F0E4029250965F300C32AD8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9F0E4040250965F400C32AD8 /* SafariExtensionViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F0E4041250965F400C32AD8 /* Base */,
+			);
+			name = SafariExtensionViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9F0E4049250965F400C32AD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9F0E404A250965F400C32AD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		9F0E404C250965F400C32AD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "CriticalThink Extension/CriticalThink_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 53A4RUFC65;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "CriticalThink Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "brandonmain.CriticalThink-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		9F0E404D250965F400C32AD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "CriticalThink Extension/CriticalThink_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 53A4RUFC65;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "CriticalThink Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "brandonmain.CriticalThink-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		9F0E4050250965F400C32AD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CriticalThink/CriticalThink.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 53A4RUFC65;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = CriticalThink/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = brandonmain.CriticalThink;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		9F0E4051250965F400C32AD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CriticalThink/CriticalThink.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 53A4RUFC65;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = CriticalThink/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = brandonmain.CriticalThink;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9F0E401C250965F300C32AD8 /* Build configuration list for PBXProject "CriticalThink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F0E4049250965F400C32AD8 /* Debug */,
+				9F0E404A250965F400C32AD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F0E404B250965F400C32AD8 /* Build configuration list for PBXNativeTarget "CriticalThink Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F0E404C250965F400C32AD8 /* Debug */,
+				9F0E404D250965F400C32AD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F0E404F250965F400C32AD8 /* Build configuration list for PBXNativeTarget "CriticalThink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F0E4050250965F400C32AD8 /* Debug */,
+				9F0E4051250965F400C32AD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9F0E4019250965F300C32AD8 /* Project object */;
+}
