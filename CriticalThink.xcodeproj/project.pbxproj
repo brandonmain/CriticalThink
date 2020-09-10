@@ -18,7 +18,7 @@
 		9F0E403F250965F400C32AD8 /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0E403E250965F400C32AD8 /* SafariExtensionViewController.swift */; };
 		9F0E4042250965F400C32AD8 /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F0E4040250965F400C32AD8 /* SafariExtensionViewController.xib */; };
 		9F0E4045250965F400C32AD8 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 9F0E4044250965F400C32AD8 /* script.js */; };
-		9F0E4047250965F400C32AD8 /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9F0E4046250965F400C32AD8 /* ToolbarItemIcon.pdf */; };
+		9F0E405525097B9500C32AD8 /* criticalthink.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9F0E405425097B9500C32AD8 /* criticalthink.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,8 +60,8 @@
 		9F0E4041250965F400C32AD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
 		9F0E4043250965F400C32AD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F0E4044250965F400C32AD8 /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
-		9F0E4046250965F400C32AD8 /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
 		9F0E4048250965F400C32AD8 /* CriticalThink_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CriticalThink_Extension.entitlements; sourceTree = "<group>"; };
+		9F0E405425097B9500C32AD8 /* criticalthink.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = criticalthink.pdf; path = ../../../Downloads/criticalthink.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,7 +131,7 @@
 				9F0E4040250965F400C32AD8 /* SafariExtensionViewController.xib */,
 				9F0E4043250965F400C32AD8 /* Info.plist */,
 				9F0E4044250965F400C32AD8 /* script.js */,
-				9F0E4046250965F400C32AD8 /* ToolbarItemIcon.pdf */,
+				9F0E405425097B9500C32AD8 /* criticalthink.pdf */,
 				9F0E4048250965F400C32AD8 /* CriticalThink_Extension.entitlements */,
 			);
 			path = "CriticalThink Extension";
@@ -228,8 +228,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F0E4047250965F400C32AD8 /* ToolbarItemIcon.pdf in Resources */,
 				9F0E4042250965F400C32AD8 /* SafariExtensionViewController.xib in Resources */,
+				9F0E405525097B9500C32AD8 /* criticalthink.pdf in Resources */,
 				9F0E4045250965F400C32AD8 /* script.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
