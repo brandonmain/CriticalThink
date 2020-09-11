@@ -24,7 +24,7 @@ Setting up the project at first was tricky, but the current settings in the Info
 
 ![Schemes](/readme-img/schemes.png)
 
-2. If developing for the web extension, then choose scheme CriticalThink extension and then click run.
+2. If developing for the web extension, then choose scheme "CriticalThink Extension" and then click run.
 
 **Ignore steps 3 - 5 if you have a developer certificate.**
 
