@@ -36,6 +36,9 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
     }
     
     private func analyzeMessage(message: [String : Any]?) {
-        NSLog(message?["text"] as! String)
+        message?.forEach({ (arg0) in
+            let (_, value) = arg0
+            NSLog("\(value)")
+        })
     }
 }
