@@ -20,9 +20,11 @@ _To learn more about CriticalThink, such as why and how it was made, please read
 ## Usage
 Setting up the project at first was tricky, but the current settings in the Info.plist have been configured for everything to work smoothly. There are only a few more steps to do on a new development end.
 
-1. After opening the project, you will be presented with the project and files. There are two schemes that allow for a the project to be ran. One scheme runs the container app and the other scheme runs the actual browser extension. You choose which scheme you would like to run depending on what you are developing for. 
+1. After opening the project, you will be presented with the project and files. There are two schemes that allow for a the project to be ran. One scheme runs the container app and the other scheme runs the actual browser extension. You choose which scheme you would like to run depending on what you are developing for.
 
-2. If developing for the web extension, then choose scheme CritcialThink extension and then click run.
+![Schemes](/readme-img/schemes.png)
+
+2. If developing for the web extension, then choose scheme CriticalThink extension and then click run.
 
 **Ignore steps 3 - 5 if you have a developer certificate.**
 
