@@ -18,7 +18,7 @@ _To learn more about CriticalThink, such as why and how it was made, please read
 
 
 ## Usage
-Setting up the project at first was tricky, but the current settings currently in the Info.plist hve been configured to help. There are only a few more steps to do on a new development end.
+Setting up the project at first was tricky, but the current settings in the Info.plist have been configured for everything to work smoothly. There are only a few more steps to do on a new development end.
 
 1. After opening the project, you will be presented with the project and files. There are two schemes that allow for a the project to be ran. One scheme runs the container app and the other scheme runs the actual browser extension. You choose which scheme you would like to run depending on what you are developing for. 
 
