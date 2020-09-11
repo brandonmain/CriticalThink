@@ -35,3 +35,5 @@ Setting up the project at first was tricky, but the current settings in the Info
 5. Finally, you will have to go to Safari > Preferences > Extensions and then click on the extension located in the left column.
 
 6. Now the extension will be ready for use!
+
+![Extension running](/readme-img/run.gif)
