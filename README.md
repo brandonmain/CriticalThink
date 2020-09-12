@@ -1,7 +1,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)
 
 # CriticalThink
-Artificial Intelligence powered by <a href='https://machinebox.io/' target='_blank'>Machine Box</a>
+###### Artificial Intelligence powered by <a href='https://machinebox.io/' target='_blank'>Machine Box</a>
 ***
 
 A web browser extension that determines the probability a given web page contains fake information.
