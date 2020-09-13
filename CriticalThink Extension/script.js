@@ -9,15 +9,25 @@ function handleMessage(event) {
 }
 
 
-// Function get all the text content contained within the body of a webpage.
-// It then dispatches a message to the Safari Extension where it passes an array of
-// all the content.
+// Function to retrieve the: url, title, page content
+// Then send these items back to the extension handler for
+// processing.
 function getPageContent() {
-    let nodes = [];
-    document.querySelectorAll('body *').forEach(function(node) {
-        nodes.push(node.textContent);
+    let title = document.querySelector("article  h1") === null ? document.title : document.querySelector("article  h1").textContent;
+    let text = document.querySelector("article") === null ? document.body.textContent : document.querySelector("article").textContent;
+    
+    const content = Promise.resolve(
+      {
+        "url" : window.location.href,
+        "title" : title === null ? document.title : title,
+        "text" : text === null ? document.body.textContent : text
+      }
+    );
+
+    content.then((c) => {
+        safari.extension.dispatchMessage("ANALYZE", { "content": c });
     });
-    safari.extension.dispatchMessage("ANALYZE", { "text": nodes });
-    nodes.clear();
 }
+
+
 

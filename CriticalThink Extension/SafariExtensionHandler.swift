@@ -26,7 +26,6 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
         return SafariExtensionViewController.shared
     }
     
-    
     override func popoverWillShow(in window: SFSafariWindow) {
         window.getActiveTab { (tab) in
             tab?.getActivePage(completionHandler: { (page) in
@@ -36,9 +35,13 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
     }
     
     private func analyzeMessage(message: [String : Any]?) {
+        let murl = message!["content"] as! [String : Any]
+        let url = murl["url"] as! String
+        print(url)
+        /*
         message?.forEach({ (arg0) in
             let (_, value) = arg0
             NSLog("\(value)")
-        })
+        })*/
     }
 }
