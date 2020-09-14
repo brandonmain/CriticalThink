@@ -10,8 +10,6 @@ import SafariServices
 
 class SafariExtensionHandler: SFSafariExtensionHandler {
     
-    var fBox : FakeboxModel = FakeboxModel()
-    
     override func messageReceived(withName messageName: String, from page: SFSafariPage, userInfo: [String : Any]?) {
         // This method will be called when a content script provided by your extension calls safari.extension.dispatchMessage("message").
         if messageName == "ANALYZE" {
@@ -38,9 +36,9 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
     
     private func analyzeMessage(message: [String : Any]?) {
         let temp = message!["content"] as! [String : Any]
-        fBox.domain = temp["url"] as! String
-        fBox.title = temp["title"] as! String
-        fBox.content = temp["text"] as! String
-        fBox.request()
+        FakeboxModel.shared.domain = temp["url"] as! String
+        FakeboxModel.shared.title = temp["title"] as! String
+        FakeboxModel.shared.content = temp["text"] as! String
+        FakeboxModel.shared.request()
     }
 }

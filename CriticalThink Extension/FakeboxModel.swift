@@ -9,6 +9,7 @@
 import Foundation
 
 class FakeboxModel {
+    static let shared = FakeboxModel()
     var success         : Bool
     var title           : String
     var titleDecision   : String
@@ -19,7 +20,7 @@ class FakeboxModel {
     var domain          : String
     var domainCategory  : String
     
-    init() {
+    private init() {
         success = false
         title = ""
         titleDecision = ""
@@ -43,7 +44,9 @@ class FakeboxModel {
         let jsonData = try? JSONSerialization.data(withJSONObject: json)
 
         // create post request
-        let url = URL(string: "http://35.193.125.94:8080/fakebox/check")!
+        // URL must be changed to actual endpoint url.
+        // Localhost is for development purposes.
+        let url = URL(string: "http://localhost:8080/fakebox/check")!
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.setValue("\(String(describing: jsonData?.count))", forHTTPHeaderField: "Content-Length")
@@ -58,8 +61,7 @@ class FakeboxModel {
             }
             let responseJSON = try? JSONSerialization.jsonObject(with: data, options: [])
             if let responseJSON = responseJSON as? [String: Any] {
-                //Print successful response
-                print(responseJSON)
+                SafariExtensionViewController.shared.updateView(with: responseJSON)
             }
         }
 
