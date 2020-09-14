@@ -19,6 +19,7 @@
 		9F0E4042250965F400C32AD8 /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F0E4040250965F400C32AD8 /* SafariExtensionViewController.xib */; };
 		9F0E4045250965F400C32AD8 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 9F0E4044250965F400C32AD8 /* script.js */; };
 		9F0E405525097B9500C32AD8 /* criticalthink.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9F0E405425097B9500C32AD8 /* criticalthink.pdf */; };
+		9F22FFD4250EEFC60071A581 /* FakeboxModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F22FFD3250EEFC60071A581 /* FakeboxModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		9F0E4044250965F400C32AD8 /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
 		9F0E4048250965F400C32AD8 /* CriticalThink_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CriticalThink_Extension.entitlements; sourceTree = "<group>"; };
 		9F0E405425097B9500C32AD8 /* criticalthink.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = criticalthink.pdf; path = ../../../Downloads/criticalthink.pdf; sourceTree = "<group>"; };
+		9F22FFD3250EEFC60071A581 /* FakeboxModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeboxModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 				9F0E4044250965F400C32AD8 /* script.js */,
 				9F0E405425097B9500C32AD8 /* criticalthink.pdf */,
 				9F0E4048250965F400C32AD8 /* CriticalThink_Extension.entitlements */,
+				9F22FFD3250EEFC60071A581 /* FakeboxModel.swift */,
 			);
 			path = "CriticalThink Extension";
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F0E403F250965F400C32AD8 /* SafariExtensionViewController.swift in Sources */,
+				9F22FFD4250EEFC60071A581 /* FakeboxModel.swift in Sources */,
 				9F0E403D250965F400C32AD8 /* SafariExtensionHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
