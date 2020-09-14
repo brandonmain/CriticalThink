@@ -17,6 +17,9 @@ _To learn more about CriticalThink, such as why and how it was made, please read
 1. Have the latest version of Xcode installed.
 2. Have the latest version of Safari installed, or at the minimum, Safari 13.x.
 3. Clone this repository and open CriticalThink.xcodeproj
+4. Have Docker installed.
+5. Start up a Fakebox docker image. The "Get Started" section in the [docs](https://machinebox.io/docs/fakebox) explains how to do this.
+6. Run and test!
 
 
 ## Usage
